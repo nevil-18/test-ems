@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html {
+  background-color: #1b1d1dd0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #92badd;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 40px 8px 10px 8px;
+  color: #cccccc;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.wrapper1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.containerform {
+  margin-left: 300px;
+  width: 60%;
+  padding-left: 100px;
+}
+
+.containerform1 {
+  margin-left: 200px;
+  margin-right: 300px;
+  padding-left: 100px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+#card {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 0px;
+  background: #f1f0f0;
+  padding: 15px;
+  width: 400px;
+  position: relative;
+  padding: 0px;
+  text-align: center;
+}
+
+.userDetailCard {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+h2.inactive {
+  color: #c0c0c0;
+}
+
+h2.active {
+  color: #e0d5d5;
+  border-bottom: 2px solid #5fbae9;
+}
+
+#But1 {
+  margin-top: 25px;
+  margin-left: 320px;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  background-color: #b473ce;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #a51ddb;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type="submit"]:disabled {
+  background-color: #f5f6f6;
+  color: #7d7d7d;
+}
+
+.opt {
+  background-color: #f6f6f6;
+  border: none;
+  color: #7d7d7d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  margin: 5px;
+  width: 50%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type="text"]:placeholder {
+  color: #cccccc;
+}
+
+input[type="text"].invalid-textbox,
+input[type="password"].invalid-textbox {
+  border-bottom: 2px solid #ed5558;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type="text"]:placeholder {
+  color: #cccccc;
+}
+
+input[type="text"].invalid-textbox,
+input[type="password"].invalid-textbox {
+  border-bottom: 2px solid #ed5558;
+}
+
+label.validation-message {
+  color: #ed5558;
+  display: inline-block;
+  float: right;
+  padding-right: 380px;
+}
+
+label.validation-message-1 {
+  color: #ed5558;
+}
+
+.label1 {
+  display: inline-block;
+  padding-top: 15px;
+  float: left;
+  width: 250px;
+  text-align: right;
+}
+
+input[type="text1"],
+input[type="password1"],
+input[type="date"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  margin: 5px;
+  width: 50%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text1"]:focus,
+input[type="password1"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type="text1"]:placeholder {
+  color: #cccccc;
+}
+
+input[type="text1"].invalid-textbox,
+input[type="password1"].invalid-textbox {
+  border-bottom: 2px solid #ed5558;
+}
+
+label.validation-message {
+  color: #ed5558;
+}
+
+*:focus {
+  outline: none;
+}
+
+#icon {
+  width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.success {
+  padding: 20px;
+  background-color: #249424;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.topnav {
+  margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#active {
+  background-color: #2b88c7;
+  color: white;
+}
+
+.left {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#right {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url("https://img.icons8.com/color/48/000000/google-logo.png")
+    transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.googleInput {
+  visibility: hidden;
+}
+
+#EditBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 150px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#EditBtn:hover {
+  cursor: pointer;
+}
+
+span.Editicon {
+  background: url("https://img.icons8.com/color/48/000000/edit--v1.png")
+    transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+span.buttonTextEdit {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#DeleteBtn {
+  display: inline-block;
+  margin-left: 100px;
+  background: white;
+  color: #444;
+  width: 150px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#DeleteBtn:hover {
+  cursor: pointer;
+}
+span.Deleteicon {
+  background: url("https://img.icons8.com/glyph-neue/64/000000/delete-forever.png")
+    transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 50px;
+}
+span.buttonTextDelete {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+
+  font-family: "Roboto", sans-serif;
+}
+
+#AddBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 250px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#AddBtn:hover {
+  cursor: pointer;
+}
+span.Addicon {
+  background: url("https://img.icons8.com/glyph-neue/64/000000/add.png")
+    transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+}
+span.buttonTextAdd {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+
+  font-family: "Roboto", sans-serif;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-div {
+  margin: 0px 25px 50px 25px;
+}

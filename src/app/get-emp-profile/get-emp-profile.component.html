@@ -1,0 +1,50 @@
+<div>
+    <img src="https://avatars.githubusercontent.com/u/19733923?s=280&v=4" alt="Playpower" width="100" height="100" style="margin-left: 100px; float: left;">
+    <div class="topnav">
+      <a id="left" (click)="myProfile()" >My Profile</a>
+      <a id="left" class="active">Search Profile</a>
+      <a id="left" (click)="onHoliday()">Holiday Calendar</a>
+      <img *ngIf="adminOrNot" id="right" src="https://img.icons8.com/ios/100/000000/edit-administrator.png" height="54" width="53" style="background-color: white;"/>   
+      <a id="right" (click)="onLogout()">Logout</a>    
+    </div> 
+  </div> 
+  
+  <div class="containerform1">
+    <div class="wrapper1">
+      <div *ngIf="adminOrNot" id="AddBtn" (click)="addEmployee()">
+        <span class="Addicon"></span>
+        <span class="buttonTextAdd">Add New Employee</span>
+      </div>
+    </div>
+  
+    <div class="success" *ngIf="showDeleteMessage">
+      User Deleted successfully
+    </div>
+  
+    <div class="flex-container">
+      <div class="flex-div" *ngFor="let user of users">
+        <div id="card">
+          <div class="userDetailCard">
+            <b>Email</b>: {{user.playpowerEmail}} <br>
+            <b>First Name</b>: {{user.firstName}} <br>
+            <b>Middle Name</b>: {{user.middleName}} <br>
+            <b>Last Name</b>: {{user.lastName}} <br>
+            <b>Designation</b>: {{user.designation}} <br>
+            <b>Department</b>: {{user.department}} <br>
+            <b>Date of Joining</b>: {{user.dateOfJoining.substring(0,10)}} <br>
+            <b>Phone</b>: {{user.phone}} <br>
+            <b>Address</b>: {{user.address}} <br>
+            <b>Admin</b>: {{user.admin}} <br>
+          </div>
+        </div>
+        <div *ngIf="adminOrNot" id="EditBtn" (click)="onUpdateUser(user._id)">
+          <span class="Editicon"></span>
+          <span class="buttonTextEdit">Update</span>
+        </div>
+        <div *ngIf="adminOrNot" id="DeleteBtn" (click)="onDeleteUser(user._id)">
+          <span class="Deleteicon"></span>
+          <span class="buttonTextDelete">Delete</span>
+        </div>
+      </div>
+    </div>
+  </div>
