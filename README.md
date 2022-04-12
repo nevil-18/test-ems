@@ -1,0 +1,1 @@
+This repo contians Practice Projects performed during training & learing different tech stack.
