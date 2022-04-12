@@ -1,6 +1,6 @@
-# vue-router
+# Vue-Router
 
-> Routing in Vue Explained with simple Website 
+# Routing in Vue Explained with creating simple Website.
 
 ## Build Setup
 
